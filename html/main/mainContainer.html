@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>主页面容器</title>
+    <link rel="stylesheet" type="text/css" href="../../css/lib/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/lib/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/pages/main.css"/>
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="main-header" >
+        <div class="s-top-left main-header-left s-btn" tapmode onclick="api.openSlidPane();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span onclick="com.refresh();" id="headerSpan">最新</span>
+
+        <div class="s-top-right main-header-right" tapmode onclick="publishTopic();">
+            <span class="mui-icon mui-icon-compose"></span>
+        </div>
+    </div>
+    <div id="main">
+
+    </div>
+</div>
+<script src="../../script/lib/api.js"></script>
+<script src="../../script/lib/fastclick.1.0.6-min.js"></script>
+<script src="../../script/lib/jQuery-2.1.4.min.js"></script>
+<script src="../../script/common.js"></script>
+<script src="../../script/pages/main/mainContainer.js"></script>
+</body>
+</html>

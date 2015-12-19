@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>页面主体</title>
+    <link rel="stylesheet" type="text/css" href="../../css/lib/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/lib/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/pages/main.css"/>
+</head>
+<body>
+<div class="mui-content mf-container">
+    <ul id="topicContainer">
+        <!--
+        <li class="s-borderbottom s-btn">
+            <h3 class="s-oneline top" title="置顶">需要大家帮忙一起完成《一起学koa》</h3>
+            <div class="mf-content mui-clearfix">
+                <div class="mf-content-img mui-pull-left">
+                    <img class="avatar" src="https://avatars.githubusercontent.com/u/3118295?v=3&amp;s=120">
+                </div>
+                <div class="mf-info mui-pull-left">
+                    <p>
+                        <span>i5ting</span>
+                        <span class="mui-pull-right"><b>35</b>/1989</span>
+                    </p>
+                    <p>
+                        <time> 5 天前</time>
+                        <time class="mui-pull-right"> 58 分钟前</time>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li class="s-borderbottom s-btn">
+            <h3 class="s-oneline ask" title="问答">需要大家帮忙一起完成《一起学koa》</h3>
+            <div class="mf-content mui-clearfix">
+                <div class="mf-content-img mui-pull-left">
+                    <img class="avatar" src="https://avatars.githubusercontent.com/u/3118295?v=3&amp;s=120">
+                </div>
+                <div class="mf-info mui-pull-left">
+                    <p>
+                        <span>i5ting</span>
+                        <span class="mui-pull-right"><b>35</b>/1989</span>
+                    </p>
+                    <p>
+                        <time> 5 天前</time>
+                        <time class="mui-pull-right"> 58 分钟前</time>
+                    </p>
+                </div>
+            </div>
+        </li>
+        -->
+    </ul>
+    <script id="topicTemplate" type="text/Ractive">
+        {{#each topicData:index}}
+            <li class="s-borderbottom s-btn" tapmode onclick="openTopicDetail({{index}})">
+                <h3 class="s-oneline {{formateClass(index)}}" title="{{formateTitle(index)}}">{{title}}</h3>
+                <div class="mf-content mui-clearfix">
+                    <div class="mf-content-img mui-pull-left">
+                        <img class="avatar" src="{{author.avatar_url}}">
+                    </div>
+                    <div class="mf-info mui-pull-left">
+                        <p>
+                            <span>{{author.loginname}}</span>
+                            <span class="mui-pull-right"><b>{{reply_count||0}}</b>/{{visit_count||0}}</span>
+                        </p>
+                        <p>
+                            <time> {{formateTime(create_at)}}</time>
+                            <time class="mui-pull-right">{{formateTime(last_reply_at)}}</time>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+    <div class="s-loaddatafromserver" id="loadingMore">
+        <div class="s-loaddatadot">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</div>
+<script src="../../script/lib/api.js"></script>
+<script src="../../script/lib/fastclick.1.0.6-min.js"></script>
+<script src="../../script/lib/jQuery-2.1.4.min.js"></script>
+<script src="../../script/lib/Ractive.js"></script>
+<script src="../../script/common.js"></script>
+<script src="../../script/pages/main/mainFrame.js"></script>
+</body>
+</html>

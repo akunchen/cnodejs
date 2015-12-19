@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>侧滑主体</title>
+    <link rel="stylesheet" type="text/css" href="../../css/lib/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/lib/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/pages/main.css"/>
+</head>
+<body>
+<div class="mui-content sf-container">
+    <ul>
+        <li class="s-borderbottom s-btn js-unlogin" tapmode onclick="login();" hidden>
+            登录
+        </li>
+        <li class="s-borderbottom s-btn js-logined" tapmode onclick="openPersonCenter();" hidden>
+            <span class="mui-icon mui-icon-contact"></span>
+            <span id="loginName"></span>
+        </li>
+        <li class="s-borderbottom s-btn js-logined" tapmode onclick="openMessage();" hidden>
+            <span class="mui-icon mui-icon-email"></span>
+            我的信息
+        </li>
+        <li class="s-borderbottom off">板块</li>
+        <li class="s-borderbottom s-btn" tapmode onclick="tabMainType('','最新');">最新</li>
+        <li class="s-borderbottom s-btn" tapmode onclick="tabMainType('share','分享');">分享</li>
+        <li class="s-borderbottom s-btn" tapmode onclick="tabMainType('ask','问答');">问答</li>
+        <li class="s-borderbottom s-btn" tapmode onclick="tabMainType('job','招聘');">招聘</li>
+        <li class="s-borderbottom off">其他</li>
+        <li class="s-borderbottom s-btn" tapmode onclick="openSettings();">设置</li>
+    </ul>
+</div>
+<script src="../../script/lib/api.js"></script>
+<script src="../../script/lib/fastclick.1.0.6-min.js"></script>
+<script src="../../script/lib/jQuery-2.1.4.min.js"></script>
+<script src="../../script/common.js"></script>
+<script src="../../script/pages/main/slideFrame.js"></script>
+</body>
+</html>
