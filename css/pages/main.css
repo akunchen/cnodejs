@@ -1,0 +1,138 @@
+.main-header {
+    text-align: left;
+    width: auto !important;
+}
+
+.main-header-left {
+    line-height: 3px;
+    padding-top: 10px;
+}
+
+.main-header-left span {
+    display: inline-block;
+    margin: 0;
+    width: 22px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.main-header-right:active,
+.main-header-left:active {
+    opacity: 0.4;
+}
+
+.main-header-right .mui-icon {
+    font-size: 28px;
+}
+
+/*主页面*/
+.mf-container {
+}
+
+.mf-container li {
+    padding: 10px 15px;
+}
+.mf-container li:active{
+    background-color: #eee;
+}
+.mf-container h3 {
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.mf-container h3:before {
+    content: attr(title);
+    margin-right: 10px;
+    margin-top: -3px;
+    color: #fff;
+    padding: 5px 6px;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: #e7e7e7;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mf-container h3.top:before {
+    background-color: #E74C3C;
+}
+
+.mf-container h3.ask:before {
+    background: #3498DB;
+}
+
+.mf-container h3.share:before {
+    background: #1ABC9C;
+}
+.mf-container h3.good:before {
+    background: #E67E22;
+}
+.mf-container h3.job:before {
+    background: #9B59B6;
+}
+
+.mf-container .mf-content {
+    position: relative;
+    padding-top: 10px;
+}
+
+.mf-container .mf-content-img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.mf-container .mf-content-img img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #F3F3F3;
+}
+
+.mf-container .mf-info {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    right: 0;
+}
+
+.mf-container .mf-info p:first-child {
+    font-size: 14px;
+}
+
+.mf-container .mf-info p {
+    margin: 0;
+    padding: 0;
+    color: #34495e;
+    font-size: 12px;
+}
+
+.mf-container .mf-info span b {
+    color: #42b983;
+}
+
+/*主页面*/
+/*侧滑页面*/
+.sf-container li{
+    line-height: 50px;
+    padding: 0 14px;
+    font-size: 16px;
+    color: #333;
+    font-family: 微软雅黑;
+}
+.sf-container li.off{
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f5f5f5;
+}
+.sf-container li.s-btn:active{
+    background-color: #eee;
+}
+/*侧滑页面*/

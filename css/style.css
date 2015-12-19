@@ -1,0 +1,159 @@
+html,body,.mui-content{
+    background-color: #fff;
+}
+.s-top-left,
+.s-top-right {
+    position: absolute;
+    bottom: 0;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    z-index: 55;
+}
+
+.s-top-left {
+    left: 0;
+}
+
+.s-top-right {
+    right: 0;
+}
+.s-top-left .mui-icon-arrowleft{
+    font-size: 28px;
+    vertical-align: -2px;
+}
+.s-top-left:active{
+    opacity: 0.4;
+}
+/*一行超出隐藏*/
+.s-oneline{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*按钮效果*/
+.s-btn {
+    cursor: pointer;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+/*边框0.5px*/
+.s-borderbottom,
+.s-bordertop,
+.s-borderleft,
+.s-borderright{
+    position: relative;
+}
+.s-borderbottom:after,
+.s-bordertop:before{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    content: '';
+    z-index: 1;
+    background-size: 100% 1px;
+}
+.s-borderbottom:after{
+    bottom: 0;
+    background-image: url("../image/border_bottom.png");
+}
+.s-bordertop:before{
+    top: 0;
+    background-image: url("../image/border_top.png");
+}
+.s-borderleft:before,
+.s-borderright:after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background-size: 1px 100%;
+}
+.s-borderleft:before{
+    background-image: url("../image/border_left.png");
+    left: 0;
+}
+.s-borderright:after{
+    background-image: url("../image/border_right.png");
+    right: 0;
+}
+
+/*加载动画*/
+.s-loaddatafromserver {
+    width: 100%;
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 13px;
+    height: 20px;
+}
+
+.s-loaddatadot {
+    display: inline-block;
+    text-align: center;
+}
+
+.s-loaddatadot > div {
+    width: 10px;
+    height: 10px;
+    margin: 0 1px;
+    background-color: #555;
+    background-size: 20%;
+    border-radius: 20%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.1s infinite ease-in-out;
+    animation: bouncedelay 1.1s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+.s-loaddatadot .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.s-loaddatadot .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.s-loaddatadot .bounce3 {
+    -webkit-animation-delay: -0.01s;
+    animation-delay: -0.01s;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%, 90%, 100% {
+        -webkit-transform: scale(0.45)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes bouncedelay {
+    0%, 90%, 100% {
+        transform: scale(0.45);
+    }
+    40% {
+        transform: scale(1.0);
+    }
+}
+
+.s-pulldownloadingdot > div {
+    width: 10px;
+    margin: 0 1px;
+    height: 10px;
+    background-color: #555;
+    background-size: 20%;
+    border-radius: 20%;
+    display: inline-block;
+}
